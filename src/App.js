@@ -12,11 +12,13 @@ class App extends React.Component {
   render() {
     return (
       <div>
+        <label>Enter city</label>
         <input
           value={this.state.city}
           onChange={(e) => this.setState({ city: e.target.value })}
         ></input>
         <br></br>
+        <label>Enter Temperature</label>
         <input
           value={this.state.temp}
           onChange={(e) => this.setState({ temp: e.target.value })}
